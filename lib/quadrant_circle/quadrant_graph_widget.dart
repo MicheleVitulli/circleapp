@@ -16,21 +16,39 @@ class QuadrantGraphWidget extends StatelessWidget {
     QuadrantType.eleven: [IconData(0x44, fontFamily: 'Roboto')],
     QuadrantType.twelve: [IconData(0x47, fontFamily: 'Roboto')],
   };
+  final Map<QuadrantType, List<IconData>> arrows = {
+    QuadrantType.one: [Icons.arrow_upward_rounded],
+  };
 
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
-          alignment: Alignment.center,
-          child: CustomPaint(
+      body: _buildBody(context),
+    );
+  }
+
+  @override
+  Widget _buildBody(BuildContext context) {
+    return Container(
+      height: 600,
+      width: 600,
+      child: Stack(
+        alignment: AlignmentDirectional.center,
+        children: [
+          Container(
+              child: CustomPaint(
             painter: QuadrantCirclePainter(dataItems: items),
-            size: Size(screenWidth, screenWidth),
-          ),
-          child: CustomPaint(
-            painter: QuadrantCirclePainter(dataItems: smallitems),
+            size: Size(400, 400),
           )),
+          Container(
+              child: CustomPaint(
+            painter: QuadrantCirclePainter2(dataItems: arrows),
+            size: Size(200, 226),
+          )),
+        ],
+      ),
     );
   }
 }
