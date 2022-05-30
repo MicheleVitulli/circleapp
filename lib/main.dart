@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'CircleApp',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Quadrant Demo'),
+      home: MyHomePage(title: 'Ciao sono Michele'),
     );
   }
 }
