@@ -115,38 +115,167 @@ class _QuadrantGraphWidgetState extends State<QuadrantGraphWidget> {
     QuadrantType.two: [IconData(e, fontFamily: 'Roboto')],
   };
   final Map<QuadrantType, List<IconData>> itemsFx = {
-    QuadrantType.one: [IconData(g, fontFamily: 'Roboto')],
-    QuadrantType.twelve: [IconData(d, fontFamily: 'Roboto')],
-    QuadrantType.eleven: [IconData(a, fontFamily: 'Roboto')],
-    QuadrantType.ten: [IconData(e, fontFamily: 'Roboto')],
-    QuadrantType.nine: [IconData(b, fontFamily: 'Roboto')],
-    QuadrantType.eight: [IconData(fx, fontFamily: 'Roboto')],
-    QuadrantType.seven: [IconData(db, fontFamily: 'Roboto')],
-    QuadrantType.six: [IconData(ab, fontFamily: 'Roboto')],
-    QuadrantType.five: [IconData(eb, fontFamily: 'Roboto')],
-    QuadrantType.four: [IconData(bb, fontFamily: 'Roboto')],
-    QuadrantType.three: [IconData(f, fontFamily: 'Roboto')],
-    QuadrantType.two: [IconData(c, fontFamily: 'Roboto')],
+    QuadrantType.one: [IconData(fx, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(cx, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(gx, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(dx, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(ax, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(ex, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(c, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(b, fontFamily: 'Roboto')],
+  };
+  final Map<QuadrantType, List<IconData>> itemsGb = {
+    QuadrantType.one: [IconData(gb, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(db, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(ab, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(eb, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(bb, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(f, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(c, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(cb, fontFamily: 'Roboto')],
   };
   final Map<QuadrantType, List<IconData>> itemsCx = {
-    QuadrantType.one: [IconData(g, fontFamily: 'Roboto')],
-    QuadrantType.twelve: [IconData(d, fontFamily: 'Roboto')],
-    QuadrantType.eleven: [IconData(a, fontFamily: 'Roboto')],
-    QuadrantType.ten: [IconData(e, fontFamily: 'Roboto')],
-    QuadrantType.nine: [IconData(b, fontFamily: 'Roboto')],
-    QuadrantType.eight: [IconData(fx, fontFamily: 'Roboto')],
-    QuadrantType.seven: [IconData(db, fontFamily: 'Roboto')],
-    QuadrantType.six: [IconData(ab, fontFamily: 'Roboto')],
-    QuadrantType.five: [IconData(eb, fontFamily: 'Roboto')],
-    QuadrantType.four: [IconData(bb, fontFamily: 'Roboto')],
-    QuadrantType.three: [IconData(f, fontFamily: 'Roboto')],
-    QuadrantType.two: [IconData(c, fontFamily: 'Roboto')],
+    QuadrantType.one: [IconData(cx, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(gx, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(dx, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(ax, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(ex, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(bx, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(b, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(fx, fontFamily: 'Roboto')],
+  };
+  final Map<QuadrantType, List<IconData>> itemsDb = {
+    QuadrantType.one: [IconData(db, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(ab, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(eb, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(bb, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(f, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(c, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(b, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(gb, fontFamily: 'Roboto')],
+  };
+  final Map<QuadrantType, List<IconData>> itemsGx = {
+    QuadrantType.one: [IconData(gx, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(dx, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(ax, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(ex, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(bx, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(b, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(fx, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(cx, fontFamily: 'Roboto')],
+  };
+  final Map<QuadrantType, List<IconData>> itemsAb = {
+    QuadrantType.one: [IconData(ab, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(eb, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(bb, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(f, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(c, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(b, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(fx, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(db, fontFamily: 'Roboto')],
+  };
+  final Map<QuadrantType, List<IconData>> itemsDx = {
+    QuadrantType.one: [IconData(dx, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(ax, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(ex, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(bx, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(b, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(fx, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(db, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(gx, fontFamily: 'Roboto')],
+  };
+  final Map<QuadrantType, List<IconData>> itemsEb = {
+    QuadrantType.one: [IconData(eb, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(bb, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(f, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(c, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(b, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(fx, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(db, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(ab, fontFamily: 'Roboto')],
+  };
+  final Map<QuadrantType, List<IconData>> itemsBb = {
+    QuadrantType.one: [IconData(bb, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(f, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(c, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(b, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(fx, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(db, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(ab, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(eb, fontFamily: 'Roboto')],
+  };
+  final Map<QuadrantType, List<IconData>> itemsF = {
+    QuadrantType.one: [IconData(f, fontFamily: 'Roboto')],
+    QuadrantType.twelve: [IconData(c, fontFamily: 'Roboto')],
+    QuadrantType.eleven: [IconData(g, fontFamily: 'Roboto')],
+    QuadrantType.ten: [IconData(d, fontFamily: 'Roboto')],
+    QuadrantType.nine: [IconData(a, fontFamily: 'Roboto')],
+    QuadrantType.eight: [IconData(e, fontFamily: 'Roboto')],
+    QuadrantType.seven: [IconData(b, fontFamily: 'Roboto')],
+    QuadrantType.six: [IconData(fx, fontFamily: 'Roboto')],
+    QuadrantType.five: [IconData(db, fontFamily: 'Roboto')],
+    QuadrantType.four: [IconData(ab, fontFamily: 'Roboto')],
+    QuadrantType.three: [IconData(eb, fontFamily: 'Roboto')],
+    QuadrantType.two: [IconData(bb, fontFamily: 'Roboto')],
   };
   final Map<QuadrantType, List<IconData>> arrows = {};
 
   String root;
 
-  List rootlist = ['C', 'G', 'D', 'A', 'E', 'B', 'F#'];
+  List rootlist = [
+    'C',
+    'G',
+    'D',
+    'A',
+    'E',
+    'B',
+    'F#',
+    'Gb',
+    'C#',
+    'Db',
+    'G#',
+    'Ab',
+    'D#',
+    'Eb',
+    'Bb',
+    'F'
+  ];
 
   String chord;
 
@@ -159,7 +288,22 @@ class _QuadrantGraphWidgetState extends State<QuadrantGraphWidget> {
     'min-maj7',
     '6',
     'min6',
-    'dim'
+    '6/9',
+    '9',
+    'min9',
+    'maj9',
+    'add9',
+    '11',
+    'min11',
+    '13',
+    'min13',
+    'maj13',
+    '7-5',
+    'aug7',
+    'aug',
+    'dim',
+    'dim7',
+    'min7b5',
   ];
 
   final ValueNotifier<String> _currentChord = ValueNotifier<String>('maj');
@@ -221,8 +365,8 @@ class _QuadrantGraphWidgetState extends State<QuadrantGraphWidget> {
   @override
   Widget _buildBody(BuildContext context) {
     return Container(
-      height: 600,
-      width: 600,
+      height: 350,
+      width: 350,
       child: Stack(
         alignment: AlignmentDirectional.center,
         children: [
@@ -260,6 +404,66 @@ class _QuadrantGraphWidgetState extends State<QuadrantGraphWidget> {
             Container(
                 child: CustomPaint(
               painter: QuadrantCirclePainterC(dataItems: itemsB),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'F#')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsFx),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'Gb')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsGb),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'C#')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsCx),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'Db')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsDb),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'G#')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsGx),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'Ab')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsAb),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'D#')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsDx),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'Eb')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsEb),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'Bb')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsBb),
+              size: Size(400, 400),
+            )),
+          if (_currentRoot.value == 'F')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterC(dataItems: itemsF),
               size: Size(400, 400),
             )),
           if (_currentChord.value == 'maj')
@@ -316,7 +520,96 @@ class _QuadrantGraphWidgetState extends State<QuadrantGraphWidget> {
               painter: QuadrantCirclePaintermin6(dataItems: arrows),
               size: Size(200, 200),
             )),
-          Container(child: Text('Leggenda'))
+          if (_currentChord.value == '6/9')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainter69(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == '9')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainter9(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'min9')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePaintermin9(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'maj9')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePaintermaj9(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == '11')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainter11(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'min11')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePaintermin11(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == '13')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainter13(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'min13')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePaintermin13(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'maj13')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePaintermaj13(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'add9')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainteradd9(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == '7-5')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainter75(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'aug7')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainteraug7(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'dim7')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainterdim7(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'min7b5')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePaintermin7b5(dataItems: arrows),
+              size: Size(200, 200),
+            )),
+          if (_currentChord.value == 'aug')
+            Container(
+                child: CustomPaint(
+              painter: QuadrantCirclePainteraug(dataItems: arrows),
+              size: Size(200, 200),
+            ))
         ],
       ),
     );
