@@ -151,40 +151,40 @@ class QuadrantCirclePainterC extends CustomPainter {
         break;
       */
       case QuadrantType.one:
-        offset = Offset(quadrantRadius - 10, 20);
+        offset = Offset(quadrantRadius - 16, 20);
         break;
       case QuadrantType.two:
-        offset = Offset(quadrantRadius - 80, 40);
+        offset = Offset(quadrantRadius - 86, 35);
         break;
       case QuadrantType.three:
-        offset = Offset(quadrantRadius - 133, 95);
+        offset = Offset(quadrantRadius - 133, 85);
         break;
       case QuadrantType.four:
-        offset = Offset(quadrantRadius - 153, 160);
+        offset = Offset(quadrantRadius - 153, 150);
         break;
       case QuadrantType.five:
-        offset = Offset(quadrantRadius - 133, 230);
+        offset = Offset(quadrantRadius - 133, 220);
         break;
       case QuadrantType.six:
-        offset = Offset(quadrantRadius - 80, 280);
+        offset = Offset(quadrantRadius - 91, 275);
         break;
       case QuadrantType.seven:
-        offset = Offset(quadrantRadius - 10, 300);
+        offset = Offset(quadrantRadius - 16, 300);
         break;
       case QuadrantType.eight:
-        offset = Offset(quadrantRadius + 60, 280);
+        offset = Offset(quadrantRadius + 61, 275);
         break;
       case QuadrantType.nine:
-        offset = Offset(quadrantRadius + 113, 230);
+        offset = Offset(quadrantRadius + 103, 220);
         break;
       case QuadrantType.ten:
-        offset = Offset(quadrantRadius + 133, 160);
+        offset = Offset(quadrantRadius + 123, 150);
         break;
       case QuadrantType.eleven:
-        offset = Offset(quadrantRadius + 113, 95);
+        offset = Offset(quadrantRadius + 103, 85);
         break;
       case QuadrantType.twelve:
-        offset = Offset(quadrantRadius + 60, 40);
+        offset = Offset(quadrantRadius + 56, 35);
         break;
 
       default:
@@ -301,9 +301,7 @@ class QuadrantCirclePainterC extends CustomPainter {
     textPainter.text = TextSpan(
         text: notetext,
         style: TextStyle(
-            fontSize: iconSize,
-            fontFamily: iconData.fontFamily,
-            color: iconColor));
+            fontSize: 40, fontFamily: iconData.fontFamily, color: iconColor));
     textPainter.layout();
     if (fromCenter) {
       offset = Offset(offset.dx - (iconSize / 2), offset.dy - (iconSize / 2));

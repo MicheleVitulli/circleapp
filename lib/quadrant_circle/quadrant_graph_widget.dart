@@ -320,44 +320,51 @@ class _QuadrantGraphWidgetState extends State<QuadrantGraphWidget> {
           children: <Widget>[
             Row(
               children: [
-                DropdownButton(
-                  hint: const Text('C'),
-                  value: root,
-                  onChanged: (newRoot) {
-                    setState(() {
-                      root = newRoot;
-                      _currentRoot.value = root;
-                    });
-                  },
-                  items: rootlist.map((valueItem) {
-                    return DropdownMenuItem(
-                      value: valueItem,
-                      child: Text(valueItem),
-                    );
-                  }).toList(),
+                Container(
+                  height: 80,
+                  child: DropdownButton(
+                    style: TextStyle(fontSize: 40, color: Colors.black),
+                    hint: const Text('C'),
+                    value: root,
+                    onChanged: (newRoot) {
+                      setState(() {
+                        root = newRoot;
+                        _currentRoot.value = root;
+                      });
+                    },
+                    items: rootlist.map((valueItem) {
+                      return DropdownMenuItem(
+                        value: valueItem,
+                        child: Text(valueItem),
+                      );
+                    }).toList(),
+                  ),
                 ),
-                DropdownButton(
-                  hint: const Text('maj'),
-                  value: chord,
-                  onChanged: (newChord) {
-                    setState(() {
-                      chord = newChord;
-                      _currentChord.value = chord;
-                    });
-                  },
-                  items: chordlist.map((valueItem) {
-                    return DropdownMenuItem(
-                      value: valueItem,
-                      child: Text(valueItem),
-                    );
-                  }).toList(),
-                )
+                Container(
+                    height: 80,
+                    child: DropdownButton(
+                      style: TextStyle(fontSize: 40, color: Colors.black),
+                      hint: const Text('maj'),
+                      value: chord,
+                      onChanged: (newChord) {
+                        setState(() {
+                          chord = newChord;
+                          _currentChord.value = chord;
+                        });
+                      },
+                      items: chordlist.map((valueItem) {
+                        return DropdownMenuItem(
+                          value: valueItem,
+                          child: Text(valueItem),
+                        );
+                      }).toList(),
+                    ))
               ],
             ),
             Container(child: _buildBody(context))
           ],
         ),
-        fit: BoxFit.contain,
+        fit: BoxFit.fill,
       )),
     );
   }
